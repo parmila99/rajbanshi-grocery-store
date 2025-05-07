@@ -1,0 +1,114 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #444;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x300?text=Fresh+Groceries') no-repeat center;
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8em;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.products-section,
+.admin-section,
+.cart-section {
+  padding: 20px;
+  background: white;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.product-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form input,
+form button {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
+
+form button {
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+@media(max-width: 768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+}

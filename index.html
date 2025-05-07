@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rajbanshi Grocery Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Rajbanshi Grocery Store</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#admin">Admin</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Fresh Groceries Delivered To Your Door</h2>
+  </section>
+
+  <main>
+    <section id="products" class="products-section">
+      <h2>Available Products</h2>
+      <div id="product-list" class="products"></div>
+    </section>
+
+    <section id="admin" class="contact">
+  <h2>Add Product (Admin)</h2>
+  <form id="addForm" onsubmit="addProduct(event)">
+    <label>Product Name:</label><br>
+    <input type="text" id="pname" required><br><br>
+    <label>Price (in Rs.):</label><br>
+    <input type="number" id="pprice" required><br><br>
+    <label>Unit (e.g. kg/ltr):</label><br>
+    <input type="text" id="punit" required><br><br>
+    <label>Select Image:</label><br>
+    <input type="file" id="pimage" accept="image/*" required><br><br>
+    <button type="submit">Add Product</button>
+  </form>
+</section>
+
+    <section id="cart" class="cart-section">
+      <h2>Your Cart</h2>
+      <ul id="cart-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    Developed by Rahul Prasad Rajbanshi
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
